@@ -1,0 +1,9 @@
+#error {
+	border-radius: 5px;
+	background-color: pink;
+	display: none;
+}
+
+.error-visible {
+	display: block !important;
+}

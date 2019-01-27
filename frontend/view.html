@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="view.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<title>View Feedback</title>
+</head>
+
+<body>
+	<script src="./view.js"></script>
+	<div id="data" class="container-fluid">
+	<h2 align="centre">View Feedback stats</h2>
+		<table class="table">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Questions</th>
+					<th scope="col">Ratings <em>(out of 5)</em></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row"><em>1</em></th>
+					<td><div><em>Are you satisfied overall with our products?</em></div></td>
+					<td><div id='q1'></div></td>
+				</tr>
+				<tr>
+					<th scope="row"><em>2</em></th>
+					<td><div><em>Do you find our products easy to use?</em></div></td>
+					<td><div id='q2'></div></td>
+				</tr>
+				<tr>
+					<th scope="row"><em>3</em></th>
+					<td><div><em>How much impact our products have made on your daily routine?</em></div></td>
+					<td><div id='q3'></div></td>
+				</tr>
+				<tr>
+					<th scope="row"><em>4</em></th>
+					<td><div><em>Would you recommend our product to your family and friends?</em></div></td>
+					<td><div id='q4'></div></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="accordian" id="suggestions">
+			<div class="card">
+				<div class="card-header" id="list_suggestions">
+					<h2 class="mb-0">
+						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#feedbacks" aria-expanded="true" aria-controls="feedbacks">
+						Feedbacks
+						</button>
+					</h2>
+				</div>
+				<div id="feedbacks" class="collapse show" aria-labelledby="list_suggestions" data-parent="#suggestions">
+					<div class="card-body" id="show_suggestions"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html> 
